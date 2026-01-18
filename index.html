@@ -51,13 +51,8 @@ nav a.active {
 }
 
 /* ======================
-   HERO
+   HERO (CLEAN & FIXED)
 ====================== */
-@keyframes slowZoom {
-  from { background-size: 100%; }
-  to   { background-size: 110%; }
-}
-
 .hero {
   min-height: 100vh;
   width: 100%;
@@ -66,19 +61,15 @@ nav a.active {
   align-items: center;
 
   background:
-    radial-gradient(
-      circle at left,
-      rgba(0,0,0,0.15) 0%,
-      rgba(0,0,0,0.65) 55%,
-      rgba(0,0,0,0.85) 100%
+    linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
     ),
     url("https://images.pexels.com/photos/5996705/pexels-photo-5996705.jpeg");
 
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-
-  animation: slowZoom 40s ease-in-out infinite alternate;
 }
 
 /* Content container */
@@ -90,24 +81,22 @@ nav a.active {
 
 .hero-text {
   max-width: 520px;
-  background: rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(6px);
-  padding: 32px;
-  border-radius: 16px;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
 }
 
 .hero-text h1 {
-  font-size: 3.4rem;
-  font-weight: 700;
-  letter-spacing: -0.5px;
+  font-size: 3.2rem;
   margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: #ffcc33;
 }
 
 .hero-text p {
-  font-size: 1.2rem;
-  opacity: 0.95;
+  font-size: 1.15rem;
   margin-bottom: 30px;
+  opacity: 0.95;
 }
 
 .hero-text a {
@@ -115,11 +104,6 @@ nav a.active {
   text-decoration: none;
   border-bottom: 2px solid #ffcc33;
   padding-bottom: 4px;
-}
-
-/* Accent */
-.highlight {
-  color: #ffcc33;
 }
 </style>
 </head>
