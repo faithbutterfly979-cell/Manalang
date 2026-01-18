@@ -51,7 +51,7 @@ nav a.active {
 }
 
 /* ======================
-   HERO (CLEAN & FIXED)
+   HERO
 ====================== */
 @keyframes slowZoom {
   from { background-size: 100%; }
@@ -59,11 +59,6 @@ nav a.active {
 }
 
 .hero {
-  animation: slowZoom 40s ease-in-out infinite alternate;
-}
-
-
-  .hero {
   min-height: 100vh;
   width: 100%;
   padding-top: 80px;
@@ -79,11 +74,11 @@ nav a.active {
     ),
     url("https://images.pexels.com/photos/5996705/pexels-photo-5996705.jpeg");
 
-  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
+  background-size: cover;
 
+  animation: slowZoom 40s ease-in-out infinite alternate;
 }
 
 /* Content container */
@@ -94,7 +89,6 @@ nav a.active {
 }
 
 .hero-text {
- .hero-text {
   max-width: 520px;
   background: rgba(0, 0, 0, 0.35);
   backdrop-filter: blur(6px);
@@ -103,18 +97,17 @@ nav a.active {
   box-shadow: 0 20px 60px rgba(0,0,0,0.4);
 }
 
-}
-
 .hero-text h1 {
-   
   font-size: 3.4rem;
   font-weight: 700;
   letter-spacing: -0.5px;
+  margin-bottom: 20px;
 }
 
 .hero-text p {
   font-size: 1.2rem;
   opacity: 0.95;
+  margin-bottom: 30px;
 }
 
 .hero-text a {
@@ -122,6 +115,11 @@ nav a.active {
   text-decoration: none;
   border-bottom: 2px solid #ffcc33;
   padding-bottom: 4px;
+}
+
+/* Accent */
+.highlight {
+  color: #ffcc33;
 }
 </style>
 </head>
