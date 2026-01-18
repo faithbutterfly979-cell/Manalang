@@ -80,7 +80,7 @@
     .header-inner {
       max-width: 1200px;
       width: 100%;
-      margin: auto;
+      margin: 0 auto;
       padding: 0 32px;
       display: flex;
       justify-content: space-between;
@@ -124,7 +124,8 @@
       justify-content: space-between;
       max-width: 1200px;
       margin: auto;
-      padding: 0 32px;
+      padding-left: 32px;
+      padding-right: 32px;
     }
 
     .hero-text {
@@ -151,76 +152,6 @@
       text-decoration: none;
       border-bottom: 1px solid #ffcc33;
       padding-bottom: 4px;
-    }
-
-    /* ======================
-       Medical Tech 3D DNA
-    ====================== */
-    .medical-3d {
-      width: 360px;
-      height: 420px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      perspective: 1000px;
-    }
-
-    .dna {
-      position: relative;
-      width: 220px;
-      height: 360px;
-      transform-style: preserve-3d;
-      animation: dnaRotate 18s linear infinite;
-    }
-
-    .dna span {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      width: 10px;
-      height: 10px;
-      background: #ffcc33;
-      border-radius: 50%;
-      box-shadow: 0 0 12px #ffcc33;
-      transform-style: preserve-3d;
-    }
-
-    .dna span:nth-child(1)  { transform: rotateY(0deg)   translateZ(60px) translateY(-160px); }
-    .dna span:nth-child(2)  { transform: rotateY(18deg)  translateZ(60px) translateY(-140px); }
-    .dna span:nth-child(3)  { transform: rotateY(36deg)  translateZ(60px) translateY(-120px); }
-    .dna span:nth-child(4)  { transform: rotateY(54deg)  translateZ(60px) translateY(-100px); }
-    .dna span:nth-child(5)  { transform: rotateY(72deg)  translateZ(60px) translateY(-80px); }
-    .dna span:nth-child(6)  { transform: rotateY(90deg)  translateZ(60px) translateY(-60px); }
-    .dna span:nth-child(7)  { transform: rotateY(108deg) translateZ(60px) translateY(-40px); }
-    .dna span:nth-child(8)  { transform: rotateY(126deg) translateZ(60px) translateY(-20px); }
-    .dna span:nth-child(9)  { transform: rotateY(144deg) translateZ(60px) translateY(0px); }
-    .dna span:nth-child(10) { transform: rotateY(162deg) translateZ(60px) translateY(20px); }
-    .dna span:nth-child(11) { transform: rotateY(180deg) translateZ(60px) translateY(40px); }
-    .dna span:nth-child(12) { transform: rotateY(198deg) translateZ(60px) translateY(60px); }
-    .dna span:nth-child(13) { transform: rotateY(216deg) translateZ(60px) translateY(80px); }
-    .dna span:nth-child(14) { transform: rotateY(234deg) translateZ(60px) translateY(100px); }
-    .dna span:nth-child(15) { transform: rotateY(252deg) translateZ(60px) translateY(120px); }
-    .dna span:nth-child(16) { transform: rotateY(270deg) translateZ(60px) translateY(140px); }
-    .dna span:nth-child(17) { transform: rotateY(288deg) translateZ(60px) translateY(160px); }
-    .dna span:nth-child(18) { transform: rotateY(306deg) translateZ(60px) translateY(180px); }
-
-    @keyframes dnaRotate {
-      from { transform: rotateY(0deg); }
-      to   { transform: rotateY(360deg); }
-    }
-
-    /* ======================
-       Responsive
-    ====================== */
-    @media (max-width: 900px) {
-      .hero {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .medical-3d {
-        margin-top: 50px;
-      }
     }
   </style>
 </head>
@@ -259,19 +190,11 @@
         Platform
       </h1>
 
-      <p>Advanced technology for modern healthcare solutions.</p>
+      <p>
+        Advanced technology for modern healthcare solutions.
+      </p>
 
       <a href="#">Learn More</a>
-    </div>
-
-    <!-- 3D Medical Tech Element -->
-    <div class="medical-3d">
-      <div class="dna">
-        <span></span><span></span><span></span><span></span><span></span>
-        <span></span><span></span><span></span><span></span><span></span>
-        <span></span><span></span><span></span><span></span><span></span>
-        <span></span><span></span><span></span>
-      </div>
     </div>
   </section>
 
